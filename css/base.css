@@ -1,0 +1,51 @@
+/*
+* Portfolio Website - Base Styles
+* Includes reset and base styling
+*/
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+::before, 
+::after {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: var(--font-primary);
+    background-color: var(--bg-black900);
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-black900);
+    font-weight: 700;
+}
+
+a {
+    color: var(--text-black900);
+    transition: var(--transition-normal);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

@@ -1,0 +1,10 @@
+/*
+* Portfolio Website - Color Theme 1
+* Primary Color: #FF6B6B (Coral Pink)
+*/
+
+:root {
+    --skin-color: #FF6B6B;
+    --skin-color-light: rgba(255, 107, 107, 0.15);
+    --skin-color-dark: #e84c4c;
+}

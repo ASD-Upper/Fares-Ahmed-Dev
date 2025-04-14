@@ -1,0 +1,162 @@
+/*
+* Portfolio Website - Components
+* Contains reusable UI components
+*/
+
+/* Buttons */
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: white;
+    border-radius: var(--border-radius-lg);
+    display: inline-block;
+    border: none;
+    background-color: var(--skin-color);
+    transition: var(--transition-normal);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-normal);
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+/* Section Title */
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    color: var(--text-black900);
+    font-weight: 700;
+    position: relative;
+    opacity: 0;
+    animation: bounceIn 0.5s ease forwards;
+}
+
+.section-title h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+/* Logo */
+.logo a {
+    color: var(--text-black900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.logo a::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+
+.logo a::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
+
+.logo a span {
+    font-family: var(--font-secondary);
+    font-size: 40px;
+}
+
+/* Navigation */
+.nav {
+    margin-top: 50px;
+}
+
+.nav li {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    color: var(--text-black900);
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--bg-black50);
+}
+
+.nav li a.active {
+    color: var(--skin-color);
+}
+
+.nav li a i {
+    margin-right: 10px;
+}
+
+/* Shadow Effects */
+.shadow-dark {
+    box-shadow: var(--shadow-normal);
+}
+
+/* Form Controls */
+.form-control {
+    width: 100%;
+    height: 50px;
+    border-radius: var(--border-radius-md);
+    background: var(--bg-black100);
+    border: 1px solid var(--bg-black50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black900);
+    transition: var(--transition-normal);
+    font-family: var(--font-primary);
+}
+
+.form-control::placeholder {
+    color: var(--text-black700);
+    opacity: 0.7;
+}
+
+.form-control:focus {
+    box-shadow: var(--shadow-normal);
+}
+
+textarea.form-control {
+    height: 140px;
+    resize: none;
+}

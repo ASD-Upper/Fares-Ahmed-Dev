@@ -1,0 +1,10 @@
+/*
+* Portfolio Website - Color Theme 3
+* Primary Color: #37B182 (Green)
+*/
+
+:root {
+    --skin-color: #37B182;
+    --skin-color-light: rgba(55, 177, 130, 0.15);
+    --skin-color-dark: #2a8c65;
+}

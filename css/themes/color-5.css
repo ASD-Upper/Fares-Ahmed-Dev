@@ -1,0 +1,10 @@
+/*
+* Portfolio Website - Color Theme 5
+* Primary Color: #F021B2 (Pink)
+*/
+
+:root {
+    --skin-color: #F021B2;
+    --skin-color-light: rgba(240, 33, 178, 0.15);
+    --skin-color-dark: #ce17a0;
+}

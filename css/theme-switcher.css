@@ -1,0 +1,119 @@
+/*
+* Portfolio Website - Theme Switcher
+* Contains styles for the color theme switcher and day/night mode
+*/
+
+/* Theme Switcher Container */
+.style-switcher {
+    position: fixed;
+    right: 0;
+    top: 60px;
+    padding: 15px;
+    width: 200px;
+    border: 1px solid var(--bg-black50);
+    background: var(--bg-black100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: var(--transition-normal);
+    transform: translateX(100%);
+    box-shadow: var(--shadow-normal);
+}
+
+.style-switcher.open {
+    transform: translateX(-25px);
+}
+
+/* Switcher Icons */
+.style-switcher .s-icon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--bg-black100);
+    color: var(--text-black900);
+    right: 100%;
+    border: 1px solid var(--bg-black50);
+    margin-right: 25px;
+    cursor: pointer;
+    transition: var(--transition-normal);
+    border-radius: var(--border-radius-circle);
+    box-shadow: var(--shadow-normal);
+}
+
+.style-switcher .s-icon i {
+    line-height: 40px;
+}
+
+.style-switcher .s-icon:hover {
+    background: var(--skin-color);
+    color: #ffffff;
+}
+
+.style-switcher .style-switcher-toggler {
+    top: 0;
+}
+
+.style-switcher .day-night {
+    top: 55px;
+}
+
+/* Switcher Title */
+.style-switcher h4 {
+    margin: 0 0 10px;
+    color: var(--text-black900);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* Color Options */
+.style-switcher .colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.style-switcher .colors span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: var(--border-radius-circle);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 8px;
+    border: 2px solid var(--bg-black50);
+}
+
+.style-switcher .colors span:hover {
+    transform: scale(1.2);
+}
+
+/* Color Options */
+.style-switcher .color-1 {
+    background: #FF6B6B;
+}
+
+.style-switcher .color-2 {
+    background: #FA5B0F;
+}
+
+.style-switcher .color-3 {
+    background: #37B182;
+}
+
+.style-switcher .color-4 {
+    background: #1854B4;
+}
+
+.style-switcher .color-5 {
+    background: #F021B2;
+}
+
+/* Active Color Indicator */
+.style-switcher .colors span.active {
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px var(--text-black900);
+    transform: scale(1.1);
+}

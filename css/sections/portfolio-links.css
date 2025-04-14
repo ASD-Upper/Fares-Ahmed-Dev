@@ -1,0 +1,50 @@
+/*
+* Portfolio Website - Portfolio Links Enhancement
+* CSS to improve the clickability of portfolio links
+*/
+
+/* Make the icon more noticeable and interactive */
+.portfolio .portfolio-item .portfolio-info .icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    transition: all 0.3s ease;
+    z-index: 5; /* Ensure icon is above other elements */
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio .portfolio-item .portfolio-info .icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio .portfolio-item .portfolio-info .icon:active {
+    transform: scale(0.95);
+}
+
+.portfolio .portfolio-item .portfolio-info .icon .fa {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+/* Make the entire portfolio item clickable */
+.portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+}
+
+/* Improve link accessibility */
+.portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    z-index: 10; /* Higher z-index to ensure it's clickable */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

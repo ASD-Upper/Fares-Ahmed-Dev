@@ -1,0 +1,10 @@
+/*
+* Portfolio Website - Color Theme 2
+* Primary Color: #FA5B0F (Orange)
+*/
+
+:root {
+    --skin-color: #FA5B0F;
+    --skin-color-light: rgba(250, 91, 15, 0.15);
+    --skin-color-dark: #d14b0a;
+}

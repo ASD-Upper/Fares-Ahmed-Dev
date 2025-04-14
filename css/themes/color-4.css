@@ -1,0 +1,10 @@
+/*
+* Portfolio Website - Color Theme 4
+* Primary Color: #1854B4 (Blue)
+*/
+
+:root {
+    --skin-color: #1854B4;
+    --skin-color-light: rgba(24, 84, 180, 0.15);
+    --skin-color-dark: #134190;
+}
